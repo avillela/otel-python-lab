@@ -1,0 +1,4 @@
+venv*
+pyenv.cfg
+*example*
+.DS_Store

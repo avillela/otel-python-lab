@@ -1,0 +1,42 @@
+apiVersion: opentelemetry.io/v1alpha1
+kind: OpenTelemetryCollector
+metadata:
+  name: otel-collector
+  namespace: opentelemetry
+  labels:
+    app: opentelemetry
+    component: otel-collector
+spec:
+  mode: deployment
+  config: |
+    receivers:
+      otlp:
+        protocols:
+          grpc:
+          http:
+
+    processors:
+      batch:
+
+    exporters:
+      otlp:
+        endpoint: "jaeger:4317"
+        tls:
+          insecure: true    
+      logging:
+        verbosity: detailed
+
+    service:
+      pipelines:
+        traces:
+          receivers: [otlp]
+          processors: [batch]
+          exporters: [otlp, logging]
+        metrics:
+          receivers: [otlp]
+          processors: [batch]
+          exporters: [logging]
+        logs:
+          receivers: [otlp]
+          processors: [batch]
+          exporters: [logging]
