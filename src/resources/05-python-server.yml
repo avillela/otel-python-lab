@@ -21,6 +21,7 @@ spec:
       containers:
       - name: py-otel-server
         image: otel-python-lab:0.1.0-py-otel-server
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8082
           name: py-server-port
