@@ -49,7 +49,7 @@ kind create cluster --name otel-python-lab
 
 2. Install the OTel Operator
 
-    > **🚨 NOTE:** [cert-manager](https://cert-manager.io) is a pre-requisite, so that needs to be installed first.
+    > **🚨 NOTE:** [cert-manager](https://cert-manager.io) is a pre-requisite, so it needs to be installed first.
 
     ```bash
     # Install cert-manager
@@ -91,9 +91,9 @@ kind create cluster --name otel-python-lab
 
     ```
     NAME                                       READY   STATUS    RESTARTS   AGE
-cert-manager-7f6665fd8c-gp8vl              1/1     Running   0          9m32s
-cert-manager-cainjector-666564dc88-crzr9   1/1     Running   0          9m32s
-cert-manager-webhook-fd94896cd-d6s5v       1/1     Running   0          9m32s
+    cert-manager-7f6665fd8c-gp8vl              1/1     Running   0          9m32s
+    cert-manager-cainjector-666564dc88-crzr9   1/1     Running   0          9m32s
+    cert-manager-webhook-fd94896cd-d6s5v       1/1     Running   0          9m32s
     ```
 
     Make sure that OTel Operator pods have started up:
@@ -106,7 +106,7 @@ cert-manager-webhook-fd94896cd-d6s5v       1/1     Running   0          9m32s
 
     ```
     NAME                                                         READY   STATUS    RESTARTS   AGE
-opentelemetry-operator-controller-manager-7dd6b7c9c9-pxwzg   2/2     Running   0          9m11s
+    opentelemetry-operator-controller-manager-7dd6b7c9c9-pxwzg   2/2     Running   0          9m11s
     ```
 
 4. Deploy sample app
