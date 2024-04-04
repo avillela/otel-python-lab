@@ -127,12 +127,12 @@ kind create cluster --name otel-python-lab
     Deploy the resources
 
     ```bash
-    kubectl --context kind-otel-python-labapply -f src/resources/00-namespaces.yml 
-    kubectl --context kind-otel-python-labapply -f src/resources/01-jaeger.yml 
-    kubectl --context kind-otel-python-labapply -f src/resources/02-otel-collector.yml 
-    kubectl --context kind-otel-python-labapply -f src/resources/03-python-instrumentation.yml
-    kubectl --context kind-otel-python-labapply -f src/resources/04-python-client.yml
-    kubectl --context kind-otel-python-labapply -f src/resources/05-python-server.yml
+    kubectl --context kind-otel-python-lab apply -f src/resources/00-namespaces.yml 
+    kubectl --context kind-otel-python-lab apply -f src/resources/01-jaeger.yml 
+    kubectl --context kind-otel-python-lab apply -f src/resources/02-otel-collector.yml 
+    kubectl --context kind-otel-python-lab apply -f src/resources/03-python-instrumentation.yml
+    kubectl --context kind-otel-python-lab apply -f src/resources/04-python-client.yml
+    kubectl --context kind-otel-python-lab apply -f src/resources/05-python-server.yml
     ```
 
 5. Port-forwarding
