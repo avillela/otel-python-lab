@@ -8,10 +8,12 @@
         "ghcr.io/devcontainers/features/python:1": {
             "version": "3.12.1",
         },    
+        "ghcr.io/mpriscella/features/kind:1": {}
     },
     "overrideFeatureInstallOrder": [    
         "ghcr.io/devcontainers/features/python",
         "ghcr.io/devcontainers/features/docker-in-docker",
+        "ghcr.io/mpriscella/features/kind",
     ]
 }
   
