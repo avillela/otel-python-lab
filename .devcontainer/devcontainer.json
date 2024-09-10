@@ -1,6 +1,6 @@
 {
     "name": "default",
-    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "image": "mcr.microsoft.com/devcontainers/base:dev-ubuntu-24.04",
     "features": {
         "ghcr.io/devcontainers/features/docker-in-docker:2": {
             "version": "latest"
