@@ -20,7 +20,9 @@ docker compose -f docker-compose-minimal.yml --env-file .env.uninstrumented up
 
 ## Shareable code
 
-Set up GH codespace. Ref [here](https://medium.com/@armamini/kubernetes-on-github-codespaces-3851163411f3).
+**NOTE:** There is currently a bug that is preventing Kubernetes from running in GitHub codespaces. To work around this, you can run this tutorial locally in VSCode using [dev containers](https://code.visualstudio.com/docs/devcontainers/tutorial). I have opened [this issue](https://github.com/kubernetes-sigs/kind/issues/3748).
+
+Set up GitHub codespace. Ref [here](https://medium.com/@armamini/kubernetes-on-github-codespaces-3851163411f3).
 
 Need to make sure that source GH repo is a [template repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository). There's a `Template Repository` checkbox in the repo settings page, just under the repo name.
 
