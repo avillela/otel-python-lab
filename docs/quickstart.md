@@ -1,6 +1,6 @@
 # Quickstart
 
-> 🚨🚨 **NOTE:** There is currently a bug that is preventing KinD from running in GitHub codespaces. To work around this, you can run this tutorial locally in VSCode using [dev containers](https://code.visualstudio.com/docs/devcontainers/tutorial). In that case, if you are also using a Silicon Mac (M1, M2, etc), you'll need to change `amd64` to `arm64` in the [setup script](https://github.com/avillela/otel-python-lab/blob/948374050a9cc1bde11e23a1c65b36f65d543486/src/scripts/setup.sh#L8). I have opened this issue with the KinD folks in the hopes of getting some sort of resolution: https://github.com/kubernetes-sigs/kind/issues/3748.
+> 🚨🚨 **NOTE:** There is currently a bug that is preventing KinD from running in GitHub codespaces. To work around this, you can run this tutorial locally in VSCode using [dev containers](https://code.visualstudio.com/docs/devcontainers/tutorial). I have opened this issue with the KinD folks in the hopes of getting some sort of resolution: https://github.com/kubernetes-sigs/kind/issues/3748.
 
 ## Pre-requisites
 
