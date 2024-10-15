@@ -12,7 +12,8 @@ chmod +x ./kind
 sudo mv ./kind /usr/local/bin/kind
 kind --version
 
-# Create KinD cluster
+# Create KinD cluster. See GitHub issue for more on manual docker network creation
+docker network create -d=bridge -o com.docker.network.bridge.enable_ip_masquerade=true -o com.docker.network.driver.mtu=1500 --subnet fc00:f853:ccd:e793::/64 kind
 kind create cluster --name otel-python-lab
 
 # Install kubectl
