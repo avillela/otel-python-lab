@@ -1,6 +1,6 @@
 # Quickstart
 
-> 🚨🚨 **NOTE:** There is currently a bug that is preventing KinD from running in GitHub codespaces. To work around this, you can run this tutorial locally in VSCode using [dev containers](https://code.visualstudio.com/docs/devcontainers/tutorial). I have opened this issue with the KinD folks in the hopes of getting some sort of resolution: https://github.com/kubernetes-sigs/kind/issues/3748.
+> 🚨🚨 **NOTE:** There is currently a bug that is preventing KinD from running in GitHub codespaces. The workaround has been to manually create the docker network and exclude the `--ipv6` flag before creating a the KinD cluster. This is already accounted for run you run the [setup script](../src/scripts/setup.sh), so no further action is required! You can track the issue [here](https://github.com/kubernetes-sigs/kind/issues/3748).
 
 ## Pre-requisites
 
